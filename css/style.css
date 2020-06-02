@@ -430,6 +430,7 @@ button.left-sidebar__right-bottom__row3_right_button {
     line-height: 16px;
     color: #C5C5C5;
     position: relative;
+    cursor: default;
 }
 
 .left-sidebar__right-bottom__row4-in-separator {
