@@ -99,7 +99,7 @@
                         <div class="arrow_pref gray"></div>
                     </button>
                 </div>
-                <div class="left-sidebar__right-bottom__row4">
+                <div class="left-sidebar__right-bottom__row4 style-4">
                     <div class="left-sidebar__right-bottom__row4-in">
                         <div class="left-sidebar__right-bottom__row4-in-left blue-active">
                             <div class="left-sidebar__right-bottom__row4-in-left-in map1"></div>
@@ -120,7 +120,7 @@
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table _table"></div>
+                                <div class="cloud-sun_table"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
@@ -149,7 +149,7 @@
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table _table"></div>
+                                <div class="cloud-sun_table"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
@@ -178,7 +178,7 @@
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table _table"></div>
+                                <div class="cloud-sun_table"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
@@ -207,7 +207,7 @@
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table _table"></div>
+                                <div class="cloud-sun_table"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
@@ -236,7 +236,7 @@
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table _table"></div>
+                                <div class="cloud-sun_table"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
@@ -247,9 +247,113 @@
                     </div>
                 </div>
             </div>
+            <div class="left-sidebar__right-bottom-footer">
+                <div class="left-sidebar__right-bottom-footer-left">Найдено: 3</div>
+                <div class="left-sidebar__right-bottom-footer-right">
+                    <div class="icon_container">
+                        <div class="n-check gray"></div>
+                    </div>
+                    <div class="icon_container">
+                        <div class="n-favorites gray"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="map">
+        <!-- popup-warning begin -->
+        <div class="popup-large-size" style="display: none;">
+            <div class="popup-close"></div>
+            <div class="o-warning-1"></div>
+            <div class="warning-text">
+                Загружаемый вами архив слишком большого размера. Разделите его на несколько, или загружайте shape-файлы по одному.
+            </div>
+        </div>
+        <!-- input begin -->
+        <input type="text" name="input" placeholder="Поиск по адресам или координатам" class="header-input" style="display: none;">
+        <!-- popup-about begin -->
+        <div class="popup-about" style="display: none;">
+            <div class="popup-close"></div>
+            <div class="popup-about-left">
+                <div class="favorites_table favorites_table_added"></div>
+            </div>
+            <div class="popup-about-right">
+                <div class="popup-about-right__row">
+                    <div class="calendar_table_mini"></div>
+                    02.07.2020
+                </div>
+                <div class="popup-about-right__row">
+                    <div class="satellite_table_mini"></div>
+                    Sentinel-2 L2A
+                </div>
+                <div class="popup-about-right__row">
+                    <div class="angle_table_mini"></div>
+                    47&deg;
+                </div>
+                <div class="popup-about-right__row">
+                    <div class="cloud-sun_table_mini"></div>
+                    36%
+                </div>
+                <div class="popup-about-right__row">
+                    <div class="maximize-area_table_mini "></div>
+                    37UCA
+                </div>
+            </div>
+        </div>
+        <!-- popup right-click begin -->
+        <div class="popup-right-click" style="display: none;">
+            <div class="popup-right-click__row">
+                <div class="pin"></div>Скопировать координаты
+            </div>
+            <div class="popup-right-click__row">
+                <div class="card-edit"></div>Получить индексы
+            </div>
+        </div>
+        <!-- popup login -->
+        <div class="popup-login" style="display: none;">
+            <div class="popup-login__row">
+                <div class="user"></div>Личный кабинет
+            </div>
+            <div class="popup-login__row">
+                <div class="log-out"></div>Выйти
+            </div>
+        </div>
+        <!-- popup stack -->
+        <div class="popup-stack" style="display: none;">
+            <div class="popup-stack-in style-4">
+                <div class="popup-stack__row color-blue">
+                    <div class="popup-stack__row-left popup-stack__row-left-active">
+                        <div class="map-stack"></div>
+                    </div>
+                    Карта
+                </div>
+                <div class="popup-stack__row">
+                    <div class="popup-stack__row-left">
+                        <div class="sputnik-stack"></div>
+                    </div>
+                    Спутниковые снимки
+                </div>
+                <div class="popup-stack__row">
+                    <div class="popup-stack__row-left">
+                        <div class="kadastr-stack"></div>
+                    </div>
+                    Кадастр
+                </div>
+                <div class="popup-stack__row">
+                    <div class="popup-stack__row-left">
+                        <div class="map-stack"></div>
+                    </div>
+                    Карта
+                </div>
+            </div>
+        </div>
+        <!-- popup compass -->
+        <div class="popup-compass" style="display: none;">
+            <div class="select gray"></div>
+            <div class="measure gray"></div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright"></div>
     </div>
     <div class="right-sidebar">
         <div class="right-sidebar__top">
