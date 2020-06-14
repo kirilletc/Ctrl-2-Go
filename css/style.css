@@ -10,6 +10,17 @@ body {
     overflow-y: auto;
     min-width: 500px;
     overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
 }
 
 * {
@@ -221,6 +232,10 @@ button::-moz-focus-inner {
 
 .left-sidebar__right-bottom__row2-left::-webkit-scrollbar {
     display: none;
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
 }
 
 .left-sidebar__right-bottom__row2-left_item {
@@ -1160,6 +1175,10 @@ button.popup-ndvi-in__row1_button {
 
 .popup-ndvi-in__row4::-webkit-scrollbar {
     display: none;
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
 }
 
 .popup-pref {
@@ -1894,7 +1913,25 @@ body.authorize {
     background: #2b3138;
     padding: 15px;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body.authorize::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+@-moz-document url-prefix() {
+
+    html,
+    body {
+        overflow: hidden !important;
+    }
 }
 
 .authorize-in {
@@ -1954,6 +1991,8 @@ body.authorize {
     position: absolute;
     top: 30px;
     left: 30px;
+    background-color: #2b3138;
+    border-radius: 4px;
 }
 
 .logo-authorize:hover {
