@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>Ctrl-2-GO!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/icons.css" rel="stylesheet" />
+    <link href="css/asRange.css" rel="stylesheet" />
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 </head>
 
 <body>
@@ -24,15 +27,15 @@
                     <div class="star_left_sidebar gray"></div>
                 </div>
                 <div class="spacer-15"></div>
-                <div class="icon_container">
+                <div class="icon_container icon_container-inactive">
                     <div class="spisok_left_sidebar gray"></div>
                 </div>
                 <div class="spacer-15"></div>
-                <div class="icon_container">
+                <div class="icon_container icon_container-inactive">
                     <div class="checklist_left_sidebar gray"></div>
                 </div>
                 <div class="spacer-15"></div>
-                <div class="icon_container">
+                <div class="icon_container icon_container-inactive">
                     <div class="saved-items_left_sidebar gray"></div>
                 </div>
             </div>
@@ -47,7 +50,8 @@
                 <div class="top_logo"></div>
                 <div class="search"></div>
             </div>
-            <div class="left-sidebar__right-bottom">
+            <!-- select left tab container -->
+            <div class="left-sidebar__right-bottom" id="select">
                 <div class="left-sidebar__right-bottom__row1">
                     <div class="left-sidebar__right-bottom__row1-left">Поиск снимков</div>
                     <div class="icon_container icon_container-preferences">
@@ -106,26 +110,27 @@
                         </div>
                         <div class="left-sidebar__right-bottom__row4-in-right">
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="calendar_table"></div>
+                                <div class="calendar_table dark-blue"></div>
                                 02.07.2020
                                 <div class="favorites_table favorites_table_added"></div>
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-separator"></div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="satellite_table"></div>
+                                <div class="satellite_table dark-blue"></div>
                                 Sentinel-2 L2A
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="angle_table"></div>
+                                <div class="angle_table dark-blue"></div>
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table"></div>
+                                <div class="cloud-sun_table dark-blue"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="maximize-area_table"></div>
+                                <div class="maximize-area_table dark-blue"></div>
                                 37UCA
+                                <div class="settings-pref"></div>
                             </div>
                         </div>
                     </div>
@@ -135,26 +140,27 @@
                         </div>
                         <div class="left-sidebar__right-bottom__row4-in-right">
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="calendar_table"></div>
+                                <div class="calendar_table dark-blue"></div>
                                 02.07.2020
                                 <div class="favorites_table"></div>
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-separator"></div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="satellite_table"></div>
+                                <div class="satellite_table dark-blue"></div>
                                 Sentinel-2 L2A
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="angle_table"></div>
+                                <div class="angle_table dark-blue"></div>
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table"></div>
+                                <div class="cloud-sun_table dark-blue"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="maximize-area_table"></div>
+                                <div class="maximize-area_table dark-blue"></div>
                                 37UCA
+                                <div class="settings-pref"></div>
                             </div>
                         </div>
                     </div>
@@ -164,26 +170,27 @@
                         </div>
                         <div class="left-sidebar__right-bottom__row4-in-right">
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="calendar_table"></div>
+                                <div class="calendar_table dark-blue"></div>
                                 02.07.2020
                                 <div class="favorites_table"></div>
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-separator"></div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="satellite_table"></div>
+                                <div class="satellite_table dark-blue"></div>
                                 Sentinel-2 L2A
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="angle_table"></div>
+                                <div class="angle_table dark-blue"></div>
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table"></div>
+                                <div class="cloud-sun_table dark-blue"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="maximize-area_table"></div>
+                                <div class="maximize-area_table dark-blue"></div>
                                 37UCA
+                                <div class="settings-pref"></div>
                             </div>
                         </div>
                     </div>
@@ -193,26 +200,27 @@
                         </div>
                         <div class="left-sidebar__right-bottom__row4-in-right">
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="calendar_table"></div>
+                                <div class="calendar_table dark-blue"></div>
                                 02.07.2020
                                 <div class="favorites_table"></div>
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-separator"></div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="satellite_table"></div>
+                                <div class="satellite_table dark-blue"></div>
                                 Sentinel-2 L2A
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="angle_table"></div>
+                                <div class="angle_table dark-blue"></div>
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table"></div>
+                                <div class="cloud-sun_table dark-blue"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="maximize-area_table"></div>
+                                <div class="maximize-area_table dark-blue"></div>
                                 37UCA
+                                <div class="settings-pref"></div>
                             </div>
                         </div>
                     </div>
@@ -222,33 +230,209 @@
                         </div>
                         <div class="left-sidebar__right-bottom__row4-in-right">
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="calendar_table"></div>
+                                <div class="calendar_table dark-blue"></div>
                                 02.07.2020
                                 <div class="favorites_table"></div>
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-separator"></div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="satellite_table"></div>
+                                <div class="satellite_table dark-blue"></div>
                                 Sentinel-2 L2A
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="angle_table"></div>
+                                <div class="angle_table dark-blue"></div>
                                 47&deg;
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="cloud-sun_table"></div>
+                                <div class="cloud-sun_table dark-blue"></div>
                                 36%
                             </div>
                             <div class="left-sidebar__right-bottom__row4-in-right-el">
-                                <div class="maximize-area_table"></div>
+                                <div class="maximize-area_table dark-blue"></div>
                                 37UCA
+                                <div class="settings-pref"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- favorites left tab container -->
+            <div class="left-sidebar__right-bottom opacity-0-display-none" id="favorites">
+                <div class="left-sidebar__right-bottom__row1">
+                    <div class="left-sidebar__right-bottom__row1-left">
+                        <div class="left-sidebar__right-bottom__row1-del">
+                            <div class="delete"></div>Удалить все
+                        </div>
+                    </div>
+                </div>
+                <div class="left-sidebar__right-bottom__row4 style-4">
+                    <div class="left-sidebar__right-bottom__row4-in">
+                        <div class="left-sidebar__right-bottom__row4-in-left blue-active">
+                            <div class="left-sidebar__right-bottom__row4-in-left-in map1">
+                                <div class="map-checkbox-pas map-checkbox-act"></div>
+                            </div>
+                        </div>
+                        <div class="left-sidebar__right-bottom__row4-in-right">
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="calendar_table dark-blue"></div>
+                                02.07.2020
+                                <div class="favorites_table favorites_table_added"></div>
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-separator"></div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="satellite_table dark-blue"></div>
+                                Sentinel-2 L2A
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="angle_table dark-blue"></div>
+                                47°
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="cloud-sun_table dark-blue"></div>
+                                36%
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="maximize-area_table dark-blue"></div>
+                                37UCA
+                                <div class="settings-pref"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-sidebar__right-bottom__row4-in">
+                        <div class="left-sidebar__right-bottom__row4-in-left">
+                            <div class="left-sidebar__right-bottom__row4-in-left-in map2">
+                                <div class="map-checkbox-pas"></div>
+                            </div>
+                        </div>
+                        <div class="left-sidebar__right-bottom__row4-in-right">
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="calendar_table dark-blue"></div>
+                                02.07.2020
+                                <div class="favorites_table"></div>
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-separator"></div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="satellite_table dark-blue"></div>
+                                Sentinel-2 L2A
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="angle_table dark-blue"></div>
+                                47°
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="cloud-sun_table dark-blue"></div>
+                                36%
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="maximize-area_table dark-blue"></div>
+                                37UCA
+                                <div class="settings-pref"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-sidebar__right-bottom__row4-in">
+                        <div class="left-sidebar__right-bottom__row4-in-left">
+                            <div class="left-sidebar__right-bottom__row4-in-left-in map3">
+                                <div class="map-checkbox-pas"></div>
+                            </div>
+                        </div>
+                        <div class="left-sidebar__right-bottom__row4-in-right">
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="calendar_table dark-blue"></div>
+                                02.07.2020
+                                <div class="favorites_table"></div>
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-separator"></div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="satellite_table dark-blue"></div>
+                                Sentinel-2 L2A
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="angle_table dark-blue"></div>
+                                47°
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="cloud-sun_table dark-blue"></div>
+                                36%
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="maximize-area_table dark-blue"></div>
+                                37UCA
+                                <div class="settings-pref"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-sidebar__right-bottom__row4-in">
+                        <div class="left-sidebar__right-bottom__row4-in-left">
+                            <div class="left-sidebar__right-bottom__row4-in-left-in map1">
+                                <div class="map-checkbox-pas"></div>
+                            </div>
+                        </div>
+                        <div class="left-sidebar__right-bottom__row4-in-right">
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="calendar_table dark-blue"></div>
+                                02.07.2020
+                                <div class="favorites_table"></div>
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-separator"></div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="satellite_table dark-blue"></div>
+                                Sentinel-2 L2A
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="angle_table dark-blue"></div>
+                                47°
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="cloud-sun_table dark-blue"></div>
+                                36%
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="maximize-area_table dark-blue"></div>
+                                37UCA
+                                <div class="settings-pref"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-sidebar__right-bottom__row4-in">
+                        <div class="left-sidebar__right-bottom__row4-in-left">
+                            <div class="left-sidebar__right-bottom__row4-in-left-in map2">
+                                <div class="map-checkbox-pas"></div>
+                            </div>
+                        </div>
+                        <div class="left-sidebar__right-bottom__row4-in-right">
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="calendar_table dark-blue"></div>
+                                02.07.2020
+                                <div class="favorites_table"></div>
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-separator"></div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="satellite_table dark-blue"></div>
+                                Sentinel-2 L2A
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="angle_table dark-blue"></div>
+                                47°
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="cloud-sun_table dark-blue"></div>
+                                36%
+                            </div>
+                            <div class="left-sidebar__right-bottom__row4-in-right-el">
+                                <div class="maximize-area_table dark-blue"></div>
+                                37UCA
+                                <div class="settings-pref"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="left-sidebar__right-bottom-footer">
-                <div class="left-sidebar__right-bottom-footer-left">Найдено: 3</div>
+                <div class="left-sidebar__right-bottom-footer-left">
+                    <span class="founded">Найдено: 3</span>
+                    <span class="visibility">Видимость: 1</span>
+                </div>
                 <div class="left-sidebar__right-bottom-footer-right">
                     <div class="icon_container">
                         <div class="n-check gray"></div>
@@ -261,18 +445,18 @@
         </div>
     </div>
     <div id="map">
-        <!-- popup-warning begin -->
-        <div class="popup-large-size" style="display: none;">
+        <!-- popup-warning -->
+        <div class="popup-large-size">
             <div class="popup-close"></div>
             <div class="o-warning-1"></div>
             <div class="warning-text">
                 Загружаемый вами архив слишком большого размера. Разделите его на несколько, или загружайте shape-файлы по одному.
             </div>
         </div>
-        <!-- input begin -->
-        <input type="text" name="input" placeholder="Поиск по адресам или координатам" class="header-input" style="display: none;">
-        <!-- popup-about begin -->
-        <div class="popup-about" style="display: none;">
+        <!-- top search input -->
+        <input type="text" name="input" placeholder="Поиск по адресам или координатам" class="header-input">
+        <!-- popup-about -->
+        <div class="popup-about">
             <div class="popup-close"></div>
             <div class="popup-about-left">
                 <div class="favorites_table favorites_table_added"></div>
@@ -297,11 +481,12 @@
                 <div class="popup-about-right__row">
                     <div class="maximize-area_table_mini "></div>
                     37UCA
+                    <div class="settings-pref"></div>
                 </div>
             </div>
         </div>
-        <!-- popup right-click begin -->
-        <div class="popup-right-click" style="display: none;">
+        <!-- popup right-click -->
+        <div class="popup-right-click">
             <div class="popup-right-click__row">
                 <div class="pin"></div>Скопировать координаты
             </div>
@@ -310,7 +495,7 @@
             </div>
         </div>
         <!-- popup login -->
-        <div class="popup-login" style="display: none;">
+        <div class="popup-login">
             <div class="popup-login__row">
                 <div class="user"></div>Личный кабинет
             </div>
@@ -319,7 +504,7 @@
             </div>
         </div>
         <!-- popup stack -->
-        <div class="popup-stack" style="display: none;">
+        <div class="popup-stack">
             <div class="popup-stack-in style-4">
                 <div class="popup-stack__row color-blue">
                     <div class="popup-stack__row-left popup-stack__row-left-active">
@@ -348,16 +533,145 @@
             </div>
         </div>
         <!-- popup compass -->
-        <div class="popup-compass" style="display: none;">
+        <div class="popup-compass">
             <div class="select gray"></div>
             <div class="measure gray"></div>
         </div>
+        <!-- popup ndvi -->
+        <div class="popup-ndvi">
+            <div class="popup-ndvi-in">
+                <div class="popup-ndvi-in-closer">
+                    <div class="arrow-left"></div>
+                </div>
+                <div class="popup-ndvi-in__row1">
+                    <button class="popup-ndvi-in__row1_button">
+                        <div class="arrow-left-button"></div>
+                        Назад
+                    </button>
+                </div>
+                <div class="popup-ndvi-in__row2 popup-ndvi-in__row2-bg"></div>
+                <div class="popup-ndvi-in__row3">
+                    <div class="popup-ndvi-in__row3_top">NDVI</div>
+                    <div class="popup-ndvi-in__row3_bottom">(B8A-B04)/(B8A+B04)</div>
+                </div>
+                <div class="popup-ndvi-in__row4">
+                    Индекс нормализованной дифференциальной растительности часто используется для мониторинга засухи, мониторинга и прогнозирования сельскохозяйственного производства, оказания помощи в прогнозировании опасных зон пожаротушения и картирования похода в пустыню. NDVI - стандартизированный индекс растительности, который позволяет нам генерировать изображение, показывающее относительную биомассу. Поглощение хлорофилла в красной зоне и относительно высокая отражательная способность растительности в ближней инфракрасной области (NIR) используются для расчета NDVI.
+                </div>
+            </div>
+        </div>
+        <!-- popup pref -->
+        <div class="popup-pref">
+            <div class="popup-pref-in">
+                <div class="popup-pref-in-closer">
+                    <div class="arrow-left"></div>
+                </div>
+                <div class="popup-pref-in__row1">
+                    <div class="popup-pref-in__row1_left">Выбор источника</div>
+                    <div class="custom__select">
+                        <select class="style-4">
+                            <option value="0">Пассивные сенсоры (день)</option>
+                            <option value="1">Пассивные сенсоры (ночь)</option>
+                            <option value="2">Пассивные сенсоры (день)</option>
+                            <option value="3">Пассивные сенсоры (ночь)</option>
+                            <option value="4">Пассивные сенсоры (день)</option>
+                            <option value="5">Пассивные сенсоры (ночь)</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="popup-pref-in__separator"></div>
+                <div class="popup-pref-in__row2">
+                    <div class="popup-pref-in__row2_left">
+                        <div class="calendar_table margin-right-15 gray"></div> Дата
+                    </div>
+                    <div class="popup-pref-in__row2_right">
+                        <input type="date" name="input-date-1" class="input-date">
+                        <input type="date" name="input-date-2" class="input-date">
+                    </div>
+                </div>
+                <div class="popup-pref-in__row3">
+                    <div class="popup-pref-in__row3_left">
+                        <div class="cloud-sun_table margin-right-15 light-gray"></div> Облачность
+                    </div>
+                    <div class="popup-pref-in__row3_right">
+                        <div class="range-example-5"></div>
+                        <div class="range__steps">
+                            <div class="range__steps_step"><span>0%</span></div>
+                            <div class="range__steps_step"><span>50%</span></div>
+                            <div class="range__steps_step"><span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-pref-in__row4">
+                    <div class="popup-pref-in__row4_left">
+                        <div class="angle_table margin-right-15 light-gray"></div> Угол съемки
+                    </div>
+                    <div class="popup-pref-in__row4_right">
+                        <div class="range-example-5"></div>
+                        <div class="range__steps">
+                            <div class="range__steps_step"><span>0%</span></div>
+                            <div class="range__steps_step"><span>50%</span></div>
+                            <div class="range__steps_step"><span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-pref-in__separator"></div>
+                <div class="popup-pref-in__row5">
+                    <div class="popup-pref-in__row5_header">
+                        <div class="data-type margin-right-15"></div>Тип данных
+                    </div>
+                    <div class="popup-pref-in__row5_content">
+                        <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" checked="checked" /><label for="radio1" class="css-label radGroup1">Метаданные</label>
+                        <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" /><label for="radio2" class="css-label radGroup1">Снимки</label>
+                    </div>
+                </div>
+                <div class="popup-pref-in__row6">
+                    <div class="popup-pref-in__row6_header">
+                        <div class="satellite_table light-gray margin-right-15"></div>Тип спутника
+                    </div>
+                    <div class="popup-pref-in__row6_content style-4">
+                        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox-1" /><label for="checkboxG4" class="css-label-1" style="font-weight: 600">Выбрать все</label>
+                        <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox-1" checked="checked" /><label for="checkboxG5" class="css-label-1">Sentinel-2</label>
+                        <input type="radio" name="radiog_lite-1" id="radio3" class="css-checkbox" checked="checked" /><label for="radio3" class="css-label radGroup2">Sentinel-2 L2A</label>
+                        <input type="radio" name="radiog_lite-1" id="radio4" class="css-checkbox" /><label for="radio4" class="css-label radGroup2">Sentinel-2 L1С</label>
+                        <input type="checkbox" name="checkboxG6" id="checkboxG6" class="css-checkbox-1" checked="checked" /><label for="checkboxG6" class="css-label-1">Landsat-8 OLI + TIRS</label>
+                        <input type="checkbox" name="checkboxG7" id="checkboxG7" class="css-checkbox-1" checked="checked" /><label for="checkboxG7" class="css-label-1">Landsat-7 ETM+</label>
+                        <input type="checkbox" name="checkboxG8" id="checkboxG8" class="css-checkbox-1" checked="checked" /><label for="checkboxG8" class="css-label-1">Landsat-4-5 MSS</label>
+                        <input type="checkbox" name="checkboxG9" id="checkboxG9" class="css-checkbox-1" /><label for="checkboxG9" class="css-label-1">Landsat-4-5 TM</label>
+                        <input type="checkbox" name="checkboxG10" id="checkboxG10" class="css-checkbox-1" /><label for="checkboxG10" class="css-label-1">CBERS-4 MUX</label>
+                        <input type="checkbox" name="checkboxG11" id="checkboxG11" class="css-checkbox-1" /><label for="checkboxG11" class="css-label-1">CBERS-4 FFI</label>
+                        <input type="checkbox" name="checkboxG12" id="checkboxG12" class="css-checkbox-1" /><label for="checkboxG12" class="css-label-1">Sentinel-2</label>
+                        <input type="checkbox" name="checkboxG13" id="checkboxG13" class="css-checkbox-1" /><label for="checkboxG13" class="css-label-1">Sentinel-2</label>
+                        <input type="checkbox" name="checkboxG14" id="checkboxG14" class="css-checkbox-1" /><label for="checkboxG14" class="css-label-1">Sentinel-2</label>
+                        <input type="checkbox" name="checkboxG15" id="checkboxG15" class="css-checkbox-1" /><label for="checkboxG15" class="css-label-1">Sentinel-2</label>
+                        <input type="checkbox" name="checkboxG16" id="checkboxG16" class="css-checkbox-1" /><label for="checkboxG16" class="css-label-1">Sentinel-2</label>
+                        <input type="checkbox" name="checkboxG17" id="checkboxG17" class="css-checkbox-1" /><label for="checkboxG17" class="css-label-1">Sentinel-2</label>
+                        <input type="checkbox" name="checkboxG18" id="checkboxG18" class="css-checkbox-1" /><label for="checkboxG18" class="css-label-1">Sentinel-2</label>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- copyright -->
-        <div class="copyright"></div>
+        <div class="copyright">
+            <span><span class="copyright-left">&copy;</span> Copyright</span>
+            <span>56°59'18.12" N, 44°26'11.83" E</span>
+            <div class="copyright-right">
+                <div class="refresh"></div>
+                <div class="rectangle"></div> 500 км
+            </div>
+        </div>
     </div>
     <div class="right-sidebar">
         <div class="right-sidebar__top">
-            <div class="icon_container">
+            <div class="icon_container icon_container-login">
                 <div class="user_right_sidebar gray blue"></div>
             </div>
             <div class="spacer-23"></div>
@@ -382,18 +696,29 @@
             </div>
         </div>
         <div class="right-sidebar__bottom">
-            <div class="icon_container">
+            <div class="icon_container-zoom">
                 <div class="plus_right_sidebar gray"></div>
             </div>
             <div class="right-sidebar__bottom_num">5</div>
-            <div class="icon_container">
+            <div class="icon_container-zoom">
                 <div class="minus_right_sidebar gray"></div>
             </div>
         </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-asRange.js"></script>
     <script>
+    $(document).ready(function() {
+        $(".range-example-5").asRange({
+            step: 1,
+            range: false,
+            min: 0,
+            max: 100,
+            scale: true,
+        });
+    });
     </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,249 @@
+/**
+* asRange v0.3.4
+* https://github.com/amazingSurge/jquery-asRange
+*
+* Copyright (c) amazingSurge
+* Released under the LGPL-3.0 license
+*/
+.asRange {
+    position: relative;
+    width: 237px;
+    height: 3px;
+    background-color: #cfcdc7;
+    border-radius: 3px;
+}
+
+.asRange .asRange-pointer {
+    position: absolute;
+    left: 30%;
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    margin-left: -4px;
+    background-color: red;
+    border-radius: 9px;
+    margin-bottom: 5px;
+    bottom: -11px;
+    outline: none;
+}
+
+.asRange .asRange-pointer:before {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    content: "";
+    background: #4DB6BC;
+    border-radius: inherit;
+}
+
+.asRange .asRange-pointer:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    border-radius: inherit;
+    background: #4DB6BC;
+    border: 3px solid #2B3138;
+}
+
+.asRange .asRange-pointer.start {
+    left: 0;
+    margin-left: 4px;
+}
+
+.asRange .asRange-pointer.stop {
+    left: 100%;
+    margin-left: -12px;
+}
+
+.asRange .asRange-pointer .asRange-tip {
+    position: absolute;
+    -webkit-transition: opacity .3s ease-in-out 0s;
+    transition: opacity .3s ease-in-out 0s;
+    top: 21px;
+    left: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C5C5C5;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    font-family: 'Open Sans';
+    width: auto;
+    min-width: 23px;
+    height: 15px;
+    line-height: 22px;
+    background: #2B3138;
+    border: 1px solid #3E4751;
+    border-radius: 5px;
+    padding: 0 2px;
+}
+
+.asRange .asRange-pointer .asRange-tip:before {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    content: "";
+    background-color: #5d5c58;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.asRange .asRange-selected {
+    position: absolute;
+    left: 30%;
+    z-index: 1;
+    width: 40%;
+    height: 3px;
+    background-color: #4DB6BC;
+    border-radius: 3px;
+}
+
+.asRange .asRange-scale {
+    display: none;
+}
+
+.asRange-scale {
+    position: relative;
+    width: 331px;
+    height: 8px;
+    background-color: #cfcdc7;
+    border-radius: 8px;
+}
+
+.asRange-scale .asRange-pointer {
+    position: absolute;
+    left: 30%;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    background-color: #fff;
+    border-radius: 9px;
+}
+
+.asRange-scale .asRange-pointer:before {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    content: "";
+    background: #6ba1ad;
+    border-radius: inherit;
+}
+
+.asRange-scale .asRange-pointer:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: #fff;
+    border-radius: inherit;
+}
+
+.asRange-scale .asRange-pointer.start {
+    left: 0;
+    margin-left: 4px;
+}
+
+.asRange-scale .asRange-pointer.stop {
+    left: 100%;
+    margin-left: -12px;
+}
+
+.asRange-scale .asRange-pointer .asRange-tip {
+    position: absolute;
+    top: -33px;
+    left: 0;
+    width: 36px;
+    height: 20px;
+    margin-left: -15px;
+    font-family: Bpreplay;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #5d5c58;
+    border: 1px solid #5d5c58;
+    border-radius: 3px;
+    -webkit-transition: opacity .3s ease-in-out 0s;
+    transition: opacity .3s ease-in-out 0s;
+}
+
+.asRange-scale .asRange-pointer .asRange-tip:before {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    content: "";
+    background-color: #5d5c58;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.asRange-scale .asRange-selected {
+    position: absolute;
+    left: 30%;
+    z-index: 1;
+    width: 40%;
+    height: 8px;
+    background-color: #7ebdcb;
+    border-radius: 9px;
+}
+
+.asRange-scale .asRange-scale {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: url("../image/scale.png") no-repeat 0 center transparent;
+}
+
+.asRange-scale .asRange-scale li {
+    position: absolute;
+    top: 18px;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    margin-left: -15px;
+    text-align: center;
+}
+
+.asRange-scale .asRange-scale li:first-child {
+    left: 0;
+}
+
+.asRange-scale .asRange-scale li:nth-child(2) {
+    left: 33.3%;
+}
+
+.asRange-scale .asRange-scale li:nth-child(3) {
+    left: 66.6%;
+}
+
+.asRange-scale .asRange-scale li:last-child {
+    left: 100%;
+}
