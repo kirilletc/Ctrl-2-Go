@@ -1962,6 +1962,7 @@ body.authorize::-webkit-scrollbar {
         height: 132px;
         background-position: 42px center;
         background-color: transparent;
+        max-width: 475px;
     }
 
     body {
@@ -1970,6 +1971,7 @@ body.authorize::-webkit-scrollbar {
 
     .authorize-in-left {
         min-width: 460px;
+        height: 100%
     }
 
     .authorize-in-left-inside {
@@ -1991,6 +1993,7 @@ body.authorize::-webkit-scrollbar {
         height: 73px;
         background-position: center;
         background-color: #2b3138;
+        max-width: 100%;
     }
 
     body {
@@ -1999,6 +2002,7 @@ body.authorize::-webkit-scrollbar {
 
     .authorize-in-left {
         min-width: 100%;
+        height: auto;
     }
 
     .authorize-in-left-inside {
@@ -2012,7 +2016,6 @@ body.authorize::-webkit-scrollbar {
 
 .authorize-in-left {
     width: 460px;
-    height: 100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -2021,6 +2024,7 @@ body.authorize::-webkit-scrollbar {
     background-color: #24272c;
     background-image: -webkit-linear-gradient(130deg, #24272c 70%, #2b3138 70%);
     position: relative;
+    margin-top: 50px;
 }
 
 .authorize-in-left__row1 {
@@ -2044,7 +2048,6 @@ body.authorize::-webkit-scrollbar {
     border-radius: 4px;
     background-size: 137px 42px;
     width: 100%;
-    max-width: 475px;
     position: fixed;
     background-repeat: no-repeat;
 }
