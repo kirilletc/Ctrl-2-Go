@@ -25,6 +25,7 @@
     margin-bottom: 5px;
     bottom: -11px;
     outline: none;
+    cursor: grab;
 }
 
 .asRange .asRange-pointer:before {
