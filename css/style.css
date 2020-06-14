@@ -1374,6 +1374,8 @@ button.popup-ndvi-in__row1_button {
     border-radius: 3px;
     border: 1px solid #3E4751;
     margin-top: 6px;
+    scrollbar-color: #454C52 #2B3138;
+	scrollbar-width: thin;
 }
 
 .select-hide {
