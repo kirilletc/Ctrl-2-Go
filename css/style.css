@@ -7,9 +7,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #2B3138;
     height: 100vh;
-    overflow-y: hidden;
+    overflow-y: auto;
     min-width: 500px;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 * {
@@ -20,6 +20,10 @@ button {
     cursor: pointer;
     transition: all 0.23s ease;
     outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
 }
 
 #map {
@@ -511,20 +515,22 @@ button.left-sidebar__right-bottom__row3_right_button {
 /*BEGIN SCROLLBAR STYLES*/
 .style-4::-webkit-scrollbar-track {
     background-color: #2B3138;
-    ;
 }
 
 .style-4::-webkit-scrollbar {
     width: 6px;
     background-color: #454C52;
-    ;
 }
 
 .style-4::-webkit-scrollbar-thumb {
     background-color: #454C52;
-    ;
     border: 2px solid #454C52;
     border-radius: 3px;
+}
+
+.style-4 {
+    scrollbar-color: #454C52 #2B3138;
+    scrollbar-width: thin;
 }
 
 /*END SCROLLBAR STYLES*/
@@ -1277,8 +1283,6 @@ button.popup-ndvi-in__row1_button {
     position: absolute;
     content: "";
     right: 8px;
-    /*border: 1px solid transparent;*/
-    /*border-color: transparent;*/
     width: 12px;
     height: 8px;
     background-position: center;
@@ -1433,7 +1437,7 @@ input.input-date {
     border: 1px solid #3E4751;
     box-sizing: border-box;
     border-radius: 10px;
-    width: 105px;
+    width: 113px;
     height: 40px;
     display: flex;
     flex-direction: row;
@@ -1442,7 +1446,7 @@ input.input-date {
     padding: 0 8px;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 22px;
     color: #C5C5C5;
     position: relative;
@@ -1460,13 +1464,13 @@ input.input-date[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     right: 0;
     top: 0;
-    width: auto;
+    width: 100%;
 }
 
 .popup-pref-in__row3 {
     width: 100%;
     height: 40px;
-    max-height: 40px;
+    min-height: 40px;
     margin-bottom: 15px;
     display: flex;
     flex-direction: row;
@@ -1507,6 +1511,7 @@ input.input-date[type="date"]::-webkit-calendar-picker-indicator {
 .range__steps {
     width: 100%;
     height: 15px;
+    min-height: 15px;
     background: transparent;
     position: absolute;
     left: 0;
@@ -1548,7 +1553,7 @@ input.input-date[type="date"]::-webkit-calendar-picker-indicator {
 .popup-pref-in__row4 {
     width: 100%;
     height: 40px;
-    max-height: 40px;
+    min-height: 40px;
     margin-bottom: 27px;
     display: flex;
     flex-direction: row;
@@ -1732,7 +1737,7 @@ label.css-label-1 {
 /*END CHECKBOXES STYLES*/
 .popup-pref-in__row6 {
     width: 100%;
-    min-height: 400px;
+    min-height: 100px;
     margin-bottom: 3px;
     display: flex;
     flex-direction: column;
@@ -1762,7 +1767,7 @@ label.css-label-1 {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    min-height: 300px;
+    min-height: 100px;
     padding-left: 30px;
     overflow-x: hidden;
     overflow-y: auto;
