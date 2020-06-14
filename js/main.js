@@ -72,13 +72,20 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
-// SOME OTHER SCRIPTS FOR SELECTORS BEHAVIOUR
+// SOME OTHER SCRIPTS FOR SELECTORS BEHAVIOUR BELOW
 // popup pref
 document.querySelector(".icon_container-preferences").addEventListener('click', function(event) {
     this.classList.toggle("icon_container-preferences-active");
     document.querySelector(".icon_container-preferences .preferences").classList.toggle("blue");
     document.querySelector(".icon_container-preferences .arrow_pref").classList.toggle("blue");
     document.querySelector(".popup-pref").classList.toggle("active-flex");
+    if (document.querySelector(".popup-ndvi.active-flex")) {
+        document.querySelector(".popup-ndvi").classList.remove("active-flex");
+        document.querySelector("button.left-sidebar__right-bottom__row3_right_button .ndvi").classList.remove("blue");
+        document.querySelector("button.left-sidebar__right-bottom__row3_right_button .arrow_pref").classList.remove("blue");
+        document.querySelector("button.left-sidebar__right-bottom__row3_right_button .arrow_pref").classList.remove("any-skale-x");
+        document.querySelector("button.left-sidebar__right-bottom__row3_right_button").classList.remove("text-blue");
+    }
 });
 document.querySelector(".popup-pref .popup-pref-in-closer").addEventListener('click', function(event) {
     document.querySelector(".icon_container-preferences").classList.remove("icon_container-preferences-active");
@@ -93,6 +100,12 @@ document.querySelector("button.left-sidebar__right-bottom__row3_right_button").a
     document.querySelector("button.left-sidebar__right-bottom__row3_right_button .arrow_pref").classList.toggle("any-skale-x");
     document.querySelector("button.left-sidebar__right-bottom__row3_right_button").classList.toggle("text-blue");
     document.querySelector(".popup-ndvi").classList.toggle("active-flex");
+    if (document.querySelector(".popup-pref.active-flex")) {
+        document.querySelector(".icon_container-preferences").classList.remove("icon_container-preferences-active");
+        document.querySelector(".icon_container-preferences .preferences").classList.remove("blue");
+        document.querySelector(".icon_container-preferences .arrow_pref").classList.remove("blue");
+        document.querySelector(".popup-pref").classList.remove("active-flex");
+    }
 });
 document.querySelector(".popup-ndvi .popup-ndvi-in-closer").addEventListener('click', function(event) {
     document.querySelector("button.left-sidebar__right-bottom__row3_right_button .ndvi").classList.remove("blue");
@@ -152,6 +165,19 @@ document.querySelector(".star_left_sidebar").parentNode.addEventListener('click'
     }
     document.querySelector("div#select").classList.add("opacity-0-display-none");
     document.querySelector("span.visibility").style.opacity = '1';
+    if (document.querySelector(".popup-pref.active-flex")) {
+        document.querySelector(".icon_container-preferences").classList.remove("icon_container-preferences-active");
+        document.querySelector(".icon_container-preferences .preferences").classList.remove("blue");
+        document.querySelector(".icon_container-preferences .arrow_pref").classList.remove("blue");
+        document.querySelector(".popup-pref").classList.remove("active-flex");
+    }
+    if (document.querySelector(".popup-ndvi.active-flex")) {
+        document.querySelector(".popup-ndvi").classList.remove("active-flex");
+        document.querySelector("button.left-sidebar__right-bottom__row3_right_button .ndvi").classList.remove("blue");
+        document.querySelector("button.left-sidebar__right-bottom__row3_right_button .arrow_pref").classList.remove("blue");
+        document.querySelector("button.left-sidebar__right-bottom__row3_right_button .arrow_pref").classList.remove("any-skale-x");
+        document.querySelector("button.left-sidebar__right-bottom__row3_right_button").classList.remove("text-blue");
+    }
 });
 // favorite tab checkboxes
 var checkboxesMap = document.querySelectorAll("#favorites .map-checkbox-pas");
