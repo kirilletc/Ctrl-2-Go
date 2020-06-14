@@ -285,6 +285,7 @@ button::-moz-focus-inner {
 
 .text-blue {
     color: #4DB6BC !important;
+    background: #383F48!important;
 }
 
 .search__left-item {
@@ -380,7 +381,13 @@ button.left-sidebar__right-bottom__row3_right_button {
     color: #C5C5C5;
     font-weight: bold;
     font-size: 12px;
+    transition: all 0.23s linear;
 }
+
+button.left-sidebar__right-bottom__row3_right_button:hover {
+	background: #383F48;
+}
+
 
 .left-sidebar__right-bottom__row3_right_button-active {}
 

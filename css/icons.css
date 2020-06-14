@@ -69,14 +69,6 @@
     transition: all 0.23s linear;
 }
 
-.icon_container-preferences:hover .preferences {
-    background: #4DB6BC;
-}
-
-.icon_container-preferences:hover .arrow_pref {
-    background: #4DB6BC;
-}
-
 .icon_container-preferences-active {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
