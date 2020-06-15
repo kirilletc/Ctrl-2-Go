@@ -720,7 +720,7 @@ input.header-input:focus:-moz-placeholder {
     right: 0;
     margin: auto;
     padding: 8px;
-    cursor: pointer;
+    cursor: default;
     transition: all 0.23s ease;
     opacity: 0;
     z-index: -10;
